@@ -1,1 +1,299 @@
-"Hello World" 
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css" />
+  <title>Kiet Nguyen</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+    <div class="container">
+      <a href="#" class="navbar-brand"><b>Kiet Nguyen</b></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#research" class="nav-link">Research</a>
+          </li>
+          <li class="nav-item">
+            <a href="#teaching" class="nav-link">Teaching</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://drive.google.com/file/d/1IvVwIoM99Qro_1acv5vFTfA-eYsvc92Y/view?usp=sharing" target="_blank"
+              class="nav-link">CV</a>
+          </li>
+          <li class="nav-item">
+            <a href="mailto:kiet@vt.edu" target="_blank" class="nav-link"><i class="bi bi-envelope-fill"></i> Email</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.linkedin.com/in/kanguyen-vn/" target="_blank" class="nav-link"><i
+                class="bi bi-linkedin"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="https://github.com/kanguyen-vn" target="_blank" class="nav-link"><i class="bi bi-github"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="https://twitter.com/kanguyen_vn" target="_blank" class="nav-link"><i class="bi bi-twitter"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main -->
+  <section class="bg-dark text-light p-5 text-center text-md-start p-lg-0 pt-lg-5">
+    <div class="container pt-5">
+      <div class="d-md-flex align-items-center justify-content-between">
+        <div>
+          <h1 class="display-1">Hello!</h1>
+          <p class="lead my-4">My name is <span class="text-warning">Kiet Nguyen</span>, and I am a Computer Science
+            Ph.D. student at Virginia Tech.</p>
+        </div>
+        <div class="mw-50 ps-5">
+          <img src="imgs/small.jpg" class="img-fluid img-responsive rounded" alt="">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="p-5" id="about">
+    <div class="container py-5">
+      <!-- <div class="row align-items-center justify-content-between">
+
+      </div> -->
+      <h1 class="display-4 text-center">About Me</h1>
+      <hr>
+      <p>I am a second-year Ph.D. student in Computer Science at VT and part of the
+        <a href="https://plan-lab.github.io/">Perception and Language (PLAN) lab</a>, advised by
+        <a href="https://isminoula.github.io/">Dr. Ismini Lourentzou</a>. My main research interest lies in multimodal
+        truth verification; in particular, I seek to include fine granularity in my research to
+        facilitate explainable misinformation detection. Overall, I am excited by all things multimodal
+        (visual-textual-aural) machine learning, but especially research
+        that addresses and helps to solve societal issues.
+      </p>
+
+      <p>I hail from Ho Chi Minh City, Vietnam. Before Virginia Tech, I did my
+        undergrad at
+        Lawrence University in Appleton, WI, graduating in June 2021 with a
+        B.A. in Computer Science and Music Theory and a minor in Math. In my free time, I sing, make music, and bake!
+      </p>
+    </div>
+  </section>
+
+  <!-- Research -->
+  <!-- <section class="p-5 bg-dark text-light" id="research">
+    <div class="container py-5">
+      <h1 class="display-4 text-center">Research</h1>
+      <hr>
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title mb-3 text-center"><b>Video Misinformation Detection</b></h3>
+          <hr>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <section id="research" class="p-5 bg-dark text-light">
+    <div class="container py-5">
+      <h1 class="display-4 text-center">Research</h1>
+      <hr>
+      <div class="accordion accordion-flush" data-bs-theme="dark" id="projects">
+        <!-- Item 1 -->
+        <div class="accordion-item py-3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#project-one">
+            <h4 class="accordion-header">Hierarchical Cross‐Attention for Online Video Misinformation Detection</h4>
+          </button>
+          <div id="project-one" class="accordion-collapse collapse" data-bs-parent="#projects">
+            <div class="accordion-body">
+              <div class="d-md-flex align-items-center justify-content-between">
+                <h6><strong>Nguyen, Kiet</strong> • Adheesh Juvekar • Afrina Tabassum • Ismini Lourentzou</h6>
+                <h6 class="ps-4"><i>In progress (2023)</i></h6>
+              </div>
+              <hr>
+              <p>Propose a hierarchical Transformer-based approach that combines multimodal signals from video frames,
+                transcripts, and metadata. Here, the text transcript acts as a guiding signal which grounds multimodal
+                fusion in the pretrained text encoder's semantics-rich representation space. To train the model, we
+                utilize a YouTube-curated dataset that spans several popular misinformation topics. By combining
+                information from multiple modalities and user comments, the proposed approach can effectively handle
+                noisy and incomplete data, making it a promising solution for real-world applications.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="accordion-item py-3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#project-two">
+            <h4 class="accordion-header">Multi‐Document Fine‐Grained Visual Entailment</h4>
+          </button>
+          <div id="project-two" class="accordion-collapse collapse" data-bs-parent="#projects">
+            <div class="accordion-body">
+              <div class="d-md-flex align-items-center justify-content-between">
+                <h6>Tang, Chia-Wei • Ting-Chih Chen • <strong>Kiet Nguyen</strong> • Kazi S. Mehrab • Alvi Md. Ishmam •
+                  Christopher Thomas</h6>
+                <h6 class="ps-4"><i>In progress (2023)</i></h6>
+              </div>
+              <hr>
+              <p>This project seeks to solve the fine-grained visual entailment task in a multi-document and multimodal
+                context. Given a natural language claim and a set of true documents containing text and images, we wish
+                to
+                design a model that can identify whether the claim is neutral to, supported by, or refuted by the
+                multimodal document information, accompanied by fine-grained entity-level labels (\eg, whether an event
+                or
+                object in the claim is supported by ground truth). This work is important for misinformation detection
+                and
+                fact-checking, as it addresses the challenge of identifying the veracity of claims. Our model design
+                employs a hierarchical Transformer with abstract meaning representation (AMR) and knowledge graphs to
+                reason about visual entailment. By transforming unstructured data such as text into structured graphs,
+                our
+                model can perform fine-grained reasoning at a more granular level, which can be particularly useful for
+                identifying the specific aspects of a claim that are supported or refuted by evidence in an
+                interpretable
+                way.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="accordion-item py-3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#project-three">
+            <h4 class="accordion-header">Concept2Vid: Concept Vectors for Zero-Shot Video Generation</h4>
+          </button>
+          <div id="project-three" class="accordion-collapse collapse" data-bs-parent="#projects">
+            <div class="accordion-body">
+              <div class="d-md-flex align-items-center justify-content-between">
+                <h6>Tabassum, Afrina • <strong>Kiet Nguyen</strong> • Ismini Lourentzou</h6>
+                <h6 class="ps-4"><i>In progress (2023)</i></h6>
+              </div>
+              <hr>
+              <p>Zero-shot video generation refers to the task of generating videos for concepts that are unseen during
+                training, where concepts can be represented as action classes, text or other types of semantic label
+                information. Even though conditional zero-shot video generation for long high-resolution videos has been
+                studied extensively, it still requires longer training times and larger training datasets. Most recent
+                works can generate videos conditioned on text captions, but often lack temporal consistency between
+                consecutive frames. In this work, we propose Concept2Vid, a prior network that utilizes the shared
+                motion
+                information from multiple videos of the same action to generate zero-shot videos for actions that are
+                completely unseen during training. Unlike previous methods that rely on large private video datasets,
+                Concept2Vid uses public video benchmarks such as Kinetics-400 to learn temporal information and a
+                pretrained text-to-image generation model to learn spatial information. We evaluate the proposed model
+                on the Kinetics400 and UCF101 datasets,
+                both qualitatively and quantitatively, demonstrating its effectiveness.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Item 4 -->
+        <div class="accordion-item py-3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#project-four">
+            <h4 class="accordion-header">Narrative Characteristics in Refugee Discourse: An Analysis of U.S. Public
+              Opinion
+              on the Afghan Refugee Crisis after the Taliban Takeover</h4>
+          </button>
+          <div id="project-four" class="accordion-collapse collapse" data-bs-parent="#projects">
+            <div class="accordion-body">
+              <div class="d-md-flex align-items-center justify-content-between">
+                <h6><strong>Nguyen, Kiet</strong> • Hulya Dogan • Ismini Lourentzou</h6>
+                <h6 class="ps-4"><i>In revision (2023)</i></h6>
+              </div>
+              <p>The United States (U.S.) military withdrawal from Afghanistan in August 2021 was met with turmoil as
+                Taliban regained control of most of the country, including Kabul. These events have affected many and
+                were widely discussed on social media, especially in the U.S. In this work, we focus on Twitter
+                discourse regarding these events, especially potential opinion shifts over time and the effect social
+                media posts by established U.S. legislators might have had on online public reception. To this end, we
+                investigate two datasets on the war in Afghanistan, consisting of Twitter posts by self-identified U.S.
+                accounts and conversation threads initiated by U.S. politicians. We find that Twitter users' discussions
+                revolve around the Kabul airport event, President Biden's handling of the situation, and people affected
+                by the U.S. withdrawal. Microframe analysis indicates that discourse centers the humanitarianism
+                underlying these occurrences and politically leans liberal, focusing on care and fairness. Lastly,
+                network analysis shows that Republicans are far more active on Twitter compare to Democrats and there is
+                more positive sentiment than negative in their conversations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Teaching -->
+  <section id="teaching" class="p-5">
+    <div class="container py-5">
+      <h1 class="display-4 text-center">Teaching Activities</h1>
+      <hr>
+      <div class="accordion accordion-flush" id="teachings">
+        <!-- Item 1 -->
+        <div class="accordion-item py-3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#teaching-one">
+            <h4 class="accordion-header">CS 5824: Advanced Machine Learning</h4>
+          </button>
+          <div id="teaching-one" class="accordion-collapse collapse" data-bs-parent="#teachings">
+            <div class="accordion-body">
+              <h6>August 2022 — May 2023</h6>
+              <hr>
+              <ul>
+                <li>Guest lecturer on the implementation of machine learning algorithms (Support Vector Machines,
+                  Decision Trees) and deep learning frameworks (PyTorch).</li>
+                <li>Holding office hours, designing and grading assignments.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="accordion-item py-3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#teaching-two">
+            <h4 class="accordion-header">CS 2114: Software Design and Data Structures</h4>
+          </button>
+          <div id="teaching-two" class="accordion-collapse collapse" data-bs-parent="#teachings">
+            <div class="accordion-body">
+              <h6>August 2021 — May 2022</h6>
+              <hr>
+              <ul>
+                <li>Designing and grading assignments in intermediate Java object‐oriented programming.</li>
+                <li>holding office hours, and leading semi‐weekly lab meetings.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer mt-auto py-3 bg-body-tertiary">
+    <div class="container">
+      <div class="d-md-flex align-items-center justify-content-between">
+        <div>
+          <span class="text-body-secondary">Copyright &copy; 2023 Kiet Nguyen</span>
+        </div>
+        <div>
+          <a href="#">
+            Back to top <i class="bi bi-arrow-up-circle"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
